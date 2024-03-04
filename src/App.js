@@ -1,26 +1,28 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { ProductList } from "./features/product-list/components/ProductList";
-import Home from "./pages/Home";
-import LoginPage from "./pages/LoginPage";
-import Signup from "./features/auth/components/Signup";
-import SignupPage from "./pages/SignupPage";
-import Cart from "./features/cart/Cart";
-import CartPage from "./pages/CartPage";
+import logo from './logo.svg';
+import './App.css';
+import { ProductList } from './features/product-list/components/ProductList';
+import Home from './pages/Home';
+import LoginPage from './pages/LoginPage';
+import Signup from './features/auth/components/Signup';
+import SignupPage from './pages/SignupPage';
+import Cart from './features/cart/Cart';
+import CartPage from './pages/CartPage';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Link,
 } from "react-router-dom";
-import CheckoutPage from "./pages/CheckoutPage";
-import ProductDetail from "./features/product-list/components/ProductDetail";
-import ProductDetailPage from "./pages/ProductDetailPage";
+import CheckoutPage from './pages/CheckoutPage';
+import ProductDetail from './features/product-list/components/ProductDetail';
+import ProductDetailPage from './pages/ProductDetailPage';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <Home></Home>
   },
   {
     path: "/login",
@@ -45,9 +47,11 @@ const router = createBrowserRouter([
 ]);
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
-      <RouterProvider router={router} />
+<RouterProvider router={router} />
     </div>
+    </Provider>
   );
 }
 
