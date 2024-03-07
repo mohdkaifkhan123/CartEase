@@ -1,8 +1,8 @@
-
-import Login from "../features/auth/components/Login"
-function LoginPage(){
-return(
-    <Login></Login>
-)
+import Login from "../features/auth/components/Login";
+function LoginPage() {
+    return ( <div>
+        <Login></Login>
+    </div>  );
 }
-export default LoginPage
+
+export default LoginPage;
