@@ -10,7 +10,6 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -19,6 +18,10 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectLoggedInUser } from './features/auth/authSlice';
 import { fetchItemsByUserIdAsync } from './features/cart/cartSlice';
+import OrderSuccessPage from './pages/OrderSuccessPage';
+import UserOrders from './features/user/components/UserOrders';
+import UserOrdersPage from './pages/UserOrdersPage';
+import PageNotFound from './pages/404';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -60,6 +63,25 @@ const router = createBrowserRouter([
       </Protected>
     ),
   },
+  {
+    path: '/order-success/:id',
+    element: (
+      <OrderSuccessPage></OrderSuccessPage>
+    ),
+  },
+  {
+    path: '/orders',
+    element: (
+      <UserOrdersPage></UserOrdersPage>
+      // we will add Page later right now using component directly.
+    ),
+  },
+  {
+    path:'*',
+    element:(
+      <PageNotFound></PageNotFound>
+    )
+  }
 ]);
 
 function App() {

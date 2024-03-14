@@ -51,7 +51,9 @@ export default function ProductDetail() {
 
   const handleCart = (e)=>{
     e.preventDefault();
-    dispatch(addToCartAsync({...product,quantity:1,user:user.id })) 
+    const newItem  = {...product,quantity:1,user:user.id }
+    delete newItem['id'];
+    dispatch(addToCartAsync(newItem)) 
   }
 
   useEffect(() => {
@@ -296,7 +298,7 @@ export default function ProductDetail() {
                     </div>
                   </RadioGroup>
                 </div>
-               
+
                 <button
                   onClick={handleCart}
                   type="submit"
