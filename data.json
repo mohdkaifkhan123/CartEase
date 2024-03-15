@@ -1736,15 +1736,31 @@
         {
           "name": "Mohd Kaif Khan",
           "email": "khank11111999@gmail.com",
+          "city": "Bhadohi",
+          "state": "Uttar Pradesh",
+          "pinCode": "221306",
+          "phone": "6388604555",
+          "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306"
+        },
+        {
+          "name": "Mohd Kaif Khan",
+          "email": "khank11111999@gmail.com",
           "phone": "6388604556",
           "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
           "city": "Bhadohi",
           "state": "Uttar Pradesh",
           "pinCode": "221306"
-        },
+        }
+      ]
+    },
+    {
+      "id": "453d",
+      "email": "rahulkumarojha27@gmail.com",
+      "password": "Kk@12345",
+      "addresses": [
         {
-          "name": "Mohd Kaif Khan",
-          "email": "khank11111999@gmail.com",
+          "name": "Kaif Khan",
+          "email": "rahulkumarojha27@gmail.com",
           "phone": "6388604556",
           "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
           "city": "Bhadohi",
@@ -4012,6 +4028,425 @@
       "selectedAddress": {
         "name": "Mohd Kaif Khan",
         "email": "khank11111999@gmail.com",
+        "phone": "6388604556",
+        "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+        "city": "Bhadohi",
+        "state": "Uttar Pradesh",
+        "pinCode": "221306"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "884b",
+      "items": [
+        {
+          "id": "ba37",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "9d9d"
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "id": "9d9d",
+        "email": "khank11111999@gmail.com",
+        "password": "Kk@12345",
+        "addresses": [
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          },
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mohd Kaif Khan",
+        "email": "khank11111999@gmail.com",
+        "phone": "6388604556",
+        "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+        "city": "Bhadohi",
+        "state": "Uttar Pradesh",
+        "pinCode": "221306"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "4f6b",
+      "items": [
+        {
+          "id": "101c",
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": "9d9d"
+        }
+      ],
+      "totalAmount": 1249,
+      "totalItems": 1,
+      "user": {
+        "id": "9d9d",
+        "email": "khank11111999@gmail.com",
+        "password": "Kk@12345",
+        "addresses": [
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          },
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mohd Kaif Khan",
+        "email": "khank11111999@gmail.com",
+        "phone": "6388604556",
+        "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+        "city": "Bhadohi",
+        "state": "Uttar Pradesh",
+        "pinCode": "221306"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "641b",
+      "items": [
+        {
+          "id": "a6e1",
+          "title": "iPhone 9",
+          "description": "An apple mobile which is nothing like apple",
+          "price": 549,
+          "discountPercentage": 12.96,
+          "rating": 4.69,
+          "stock": 94,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/1/1.jpg",
+            "https://cdn.dummyjson.com/product-images/1/2.jpg",
+            "https://cdn.dummyjson.com/product-images/1/3.jpg",
+            "https://cdn.dummyjson.com/product-images/1/4.jpg",
+            "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "9d9d"
+        }
+      ],
+      "totalAmount": 549,
+      "totalItems": 1,
+      "user": {
+        "id": "9d9d",
+        "email": "khank11111999@gmail.com",
+        "password": "Kk@12345",
+        "addresses": [
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          },
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mohd Kaif Khan",
+        "email": "khank11111999@gmail.com",
+        "phone": "6388604556",
+        "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+        "city": "Bhadohi",
+        "state": "Uttar Pradesh",
+        "pinCode": "221306"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "b04e",
+      "items": [
+        {
+          "id": "e7be",
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": "453d"
+        }
+      ],
+      "totalAmount": 1249,
+      "totalItems": 1,
+      "user": {
+        "id": "453d",
+        "email": "rahulkumarojha27@gmail.com",
+        "password": "Kk@12345",
+        "addresses": [
+          {
+            "name": "Kaif Khan",
+            "email": "rahulkumarojha27@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Kaif Khan",
+        "email": "rahulkumarojha27@gmail.com",
+        "phone": "6388604556",
+        "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+        "city": "Bhadohi",
+        "state": "Uttar Pradesh",
+        "pinCode": "221306"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "a5f4",
+      "items": [
+        {
+          "id": "7936",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "9d9d"
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "id": "9d9d",
+        "email": "khank11111999@gmail.com",
+        "password": "Kk@12345",
+        "addresses": [
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          },
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mohd Kaif Khan",
+        "email": "khank11111999@gmail.com",
+        "phone": "6388604556",
+        "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+        "city": "Bhadohi",
+        "state": "Uttar Pradesh",
+        "pinCode": "221306"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "b2c5",
+      "items": [
+        {
+          "id": "ad06",
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/9/1.jpg",
+            "https://cdn.dummyjson.com/product-images/9/2.png",
+            "https://cdn.dummyjson.com/product-images/9/3.png",
+            "https://cdn.dummyjson.com/product-images/9/4.jpg",
+            "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "9d9d"
+        }
+      ],
+      "totalAmount": 1099,
+      "totalItems": 1,
+      "user": {
+        "id": "9d9d",
+        "email": "khank11111999@gmail.com",
+        "password": "Kk@12345",
+        "addresses": [
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          },
+          {
+            "name": "Mohd Kaif Khan",
+            "email": "khank11111999@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mohd Kaif Khan",
+        "email": "khank11111999@gmail.com",
+        "phone": "6388604556",
+        "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+        "city": "Bhadohi",
+        "state": "Uttar Pradesh",
+        "pinCode": "221306"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "ecd0",
+      "items": [
+        {
+          "id": "0aff",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "453d"
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "id": "453d",
+        "email": "rahulkumarojha27@gmail.com",
+        "password": "Kk@12345",
+        "addresses": [
+          {
+            "name": "Kaif Khan",
+            "email": "rahulkumarojha27@gmail.com",
+            "phone": "6388604556",
+            "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
+            "city": "Bhadohi",
+            "state": "Uttar Pradesh",
+            "pinCode": "221306"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Kaif Khan",
+        "email": "rahulkumarojha27@gmail.com",
         "phone": "6388604556",
         "street": "Gori Nevaria, Khamaria, Bhadoh,UP, 221306",
         "city": "Bhadohi",
