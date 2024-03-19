@@ -1121,24 +1121,6 @@
         "https://cdn.dummyjson.com/product-images/60/thumbnail.jpg",
         "https://cdn.dummyjson.com/product-images/60/thumbnail.jpg"
       ]
-    },
-    {
-      "id": "d6a1",
-      "title": "Samsung m1",
-      "description": "Premium phone",
-      "brand": "HP Pavilion",
-      "category": "laptops",
-      "price": 10000,
-      "discountPercentage": 10,
-      "stock": 1,
-      "thumbnail": "NA",
-      "images": [
-        "NA",
-        "NA",
-        "NA",
-        "NA"
-      ],
-      "rating": 0
     }
   ],
   "brands": [
