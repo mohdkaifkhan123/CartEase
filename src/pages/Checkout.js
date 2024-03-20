@@ -92,7 +92,7 @@ function Checkout() {
           <div className="lg:col-span-3">
             {/* This form is for address */}
             <form
-              className="bg-white px-5 py-12 mt-12"
+              className="bg-red-100 rounded-md border-2 px-5 py-12 mt-12"
               noValidate
               onSubmit={handleSubmit((data) => {
                 console.log(data);
@@ -107,10 +107,10 @@ function Checkout() {
             >
               <div className="space-y-12">
                 <div className="border-b border-gray-900/10 pb-12">
-                  <h2 className="text-2xl font-semibold leading-7 text-gray-900">
+                  <h2 className="flex text-2xl font-semibold leading-7 text-gray-900">
                     Personal Information
                   </h2>
-                  <p className="mt-1 text-sm leading-6 text-gray-600">
+                  <p className="flex mt-1 text-sm leading-6 text-gray-600">
                     Use a permanent address where you can receive mail.
                   </p>
 
@@ -118,7 +118,7 @@ function Checkout() {
                     <div className="sm:col-span-4">
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        className="flex text-sm font-medium leading-6 text-gray-900"
                       >
                         Full name
                       </label>
@@ -140,7 +140,7 @@ function Checkout() {
                     <div className="sm:col-span-4">
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        className="flex text-sm font-medium leading-6 text-gray-900"
                       >
                         Email address
                       </label>
@@ -162,7 +162,7 @@ function Checkout() {
                     <div className="sm:col-span-3">
                       <label
                         htmlFor="phone"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        className="flex text-sm font-medium leading-6 text-gray-900"
                       >
                         Phone
                       </label>
@@ -184,7 +184,7 @@ function Checkout() {
                     <div className="col-span-full">
                       <label
                         htmlFor="street-address"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        className="flex text-sm font-medium leading-6 text-gray-900"
                       >
                         Street address
                       </label>
@@ -208,7 +208,7 @@ function Checkout() {
                     <div className="sm:col-span-2 sm:col-start-1">
                       <label
                         htmlFor="city"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        className="flex text-sm font-medium leading-6 text-gray-900"
                       >
                         City
                       </label>
@@ -231,7 +231,7 @@ function Checkout() {
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="state"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        className="flex text-sm font-medium leading-6 text-gray-900"
                       >
                         State / Province
                       </label>
@@ -254,7 +254,7 @@ function Checkout() {
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="pinCode"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        className="flex text-sm font-medium leading-6 text-gray-900"
                       >
                         ZIP / Postal code
                       </label>
@@ -287,25 +287,25 @@ function Checkout() {
                   </button>
                   <button
                     type="submit"
-                    className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Add Address
                   </button>
                 </div>
               </div>
             </form>
-            <div className="border-b border-gray-900/10 pb-12">
-              <h2 className="text-base font-semibold leading-7 text-gray-900">
+            <div className="mt-4 mb-5 rounded-md border-2  bg-white border-b border-gray-900/10 pb-12">
+              <h2 className=" text-base font-semibold leading-7 text-gray-900">
                 Addresses
               </h2>
-              <p className="mt-1 text-sm leading-6 text-gray-600">
+              <p className=" mt-1 text-sm leading-6 text-gray-600">
                 Choose from Existing addresses
               </p>
               <ul>
                 {user.addresses.map((address, index) => (
                   <li
                     key={index}
-                    className="flex justify-between gap-x-6 px-5 py-5 border-solid border-2 border-gray-200"
+                    className="m-2 flex justify-between gap-x-6 px-5 py-5 border-solid border-2 border-gray-200"
                   >
                     <div className="flex gap-x-4">
                       <input
@@ -347,7 +347,7 @@ function Checkout() {
                   <p className="mt-1 text-sm leading-6 text-gray-600">
                     Choose One
                   </p>
-                  <div className="mt-6 space-y-6">
+                  <div className="ml-3 mt-6 space-y-6">
                     <div className="flex items-center gap-x-3">
                       <input
                         id="cash"
@@ -388,7 +388,7 @@ function Checkout() {
             </div>
           </div>
           <div className="lg:col-span-2">
-            <div className="mx-auto mt-12 bg-white max-w-7xl px-2 sm:px-2 lg:px-4">
+            <div className="mx-auto mt-12 bg-red-100 rounded-md border-2 max-w-7xl px-2 sm:px-2 lg:px-4">
               <div className="border-t border-gray-200 px-0 py-6 sm:px-0">
                 <h1 className="text-4xl my-5 font-bold tracking-tight text-gray-900">
                   Cart
@@ -441,7 +441,7 @@ function Checkout() {
                               <button
                                 onClick={(e) => handleRemove(e, item.id)}
                                 type="button"
-                                className="font-medium text-indigo-600 hover:text-indigo-500"
+                                className="font-medium text-red-600 hover:text-indigo-500"
                               >
                                 Remove
                               </button>
@@ -469,7 +469,7 @@ function Checkout() {
                 <div className="mt-6">
                   <div
                     onClick={handleOrder}
-                    className="flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                    className="flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-red-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                   >
                     Order Now
                   </div>
@@ -480,7 +480,7 @@ function Checkout() {
                     <Link to="/">
                       <button
                         type="button"
-                        className="font-medium text-indigo-600 hover:text-indigo-500"
+                        className="m-2 font-medium text-red-600 hover:text-indigo-500"
                       >
                         Continue Shopping
                         <span aria-hidden="true"> &rarr;</span>

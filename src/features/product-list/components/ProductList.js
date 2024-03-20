@@ -112,7 +112,7 @@ export default function ProductList() {
   }, []);
 
   return (
-    <div className="bg-white">
+    <div className="bg-red-100  rounded-md border-2">
       <div>
         <MobileFilter
           handleFilter={handleFilter}
@@ -348,12 +348,12 @@ function DesktopFilter({ handleFilter, filters }) {
         <Disclosure
           as="div"
           key={section.id}
-          className="border-b border-gray-200 py-6"
+          className="border-b border-gray-200 bg py-6"
         >
           {({ open }) => (
             <>
               <h3 className="-my-3 flow-root">
-                <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
+                <Disclosure.Button className="flex w-full items-center justify-between bg-red-100 py-3 text-sm text-gray-400 hover:text-gray-500">
                   <span className="font-medium text-gray-900">
                     {section.name}
                   </span>
@@ -399,7 +399,7 @@ function DesktopFilter({ handleFilter, filters }) {
 
 function ProductGrid({ products, status }) {
   return (
-    <div className="bg-white">
+    <div className="bg-red-100">
       <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {status === 'loading' ? (
@@ -416,7 +416,7 @@ function ProductGrid({ products, status }) {
           ) : null}
           {products.map((product) => (
             <Link to={`/product-detail/${product.id}`} key={product.id}>
-              <div className="group relative border-solid border-2 p-2 border-gray-200">
+              <div className="group relative border-solid border-2 p-2 border-gray-300">
                 <div className="min-h-60 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
                   <img
                     src={product.thumbnail}
@@ -432,9 +432,9 @@ function ProductGrid({ products, status }) {
                         {product.title}
                       </div>
                     </h3>
-                    <p className="mt-1 text-sm text-gray-500">
-                      <StarIcon className="w-6 h-6 inline"></StarIcon>
-                      <span className=" align-bottom">{product.rating}</span>
+                    <p className="flex mt-1 text-sm text-gray-500">
+                      <StarIcon className="  w-6 h-6 inline"></StarIcon>
+                      <span className="m-1 align-bottom">{product.rating}</span>
                     </p>
                   </div>
                   <div>

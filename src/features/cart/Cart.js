@@ -38,7 +38,7 @@ export default function Cart() {
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
 
       <div>
-        <div className="mx-auto mt-12 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mt-12 rounded-md border-2 bg-red-100 max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
             <h1 className="text-4xl my-5 font-bold tracking-tight text-gray-900">
               Cart
@@ -140,7 +140,7 @@ export default function Cart() {
             <div className="mt-6">
               <Link
                 to="/checkout"
-                className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                className="flex items-center justify-center rounded-md border border-transparent bg-red-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
               >
                 Checkout
               </Link>
@@ -151,7 +151,7 @@ export default function Cart() {
                 <Link to="/">
                   <button
                     type="button"
-                    className="font-medium text-indigo-600 hover:text-indigo-500"
+                    className="ml-2 font-medium text-red-600 hover:text-indigo-500"
                   >
                     Continue Shopping
                     <span aria-hidden="true"> &rarr;</span>

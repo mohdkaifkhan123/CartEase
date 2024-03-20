@@ -9,7 +9,6 @@ import { discountedPrice } from '../../../app/constants';
 import { useAlert } from 'react-alert';
 import { Grid } from 'react-loader-spinner';
 
-// TODO: In server data we will add colors, sizes , highlights. to each product
 
 const colors = [
   { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
@@ -38,7 +37,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-// TODO : Loading UI
 
 export default function ProductDetail() {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
@@ -60,7 +58,6 @@ export default function ProductDetail() {
       };
       
       dispatch(addToCartAsync(newItem));
-      // TODO: it will be based on server response of backend
       alert.success('Item added to Cart');
     } else {
       alert.error('Item Already added');
@@ -72,7 +69,7 @@ export default function ProductDetail() {
   }, [dispatch, params.id]);
 
   return (
-    <div className="bg-white">
+    <div className="bg-red-100 ">
       {status === 'loading' ? (
         <Grid
           height="80"
@@ -161,7 +158,7 @@ export default function ProductDetail() {
           {/* Product info */}
           <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-              <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+              <h1 className="flex text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                 {product.title}
               </h1>
             </div>
@@ -169,16 +166,16 @@ export default function ProductDetail() {
             {/* Options */}
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Product information</h2>
-              <p className="text-xl line-through tracking-tight text-gray-900">
+              <p className="flex text-xl line-through tracking-tight text-gray-900">
                 ${product.price}
               </p>
-              <p className="text-3xl tracking-tight text-gray-900">
+              <p className="flex text-3xl tracking-tight text-gray-900">
                 ${discountedPrice(product)}
               </p>
 
               {/* Reviews */}
               <div className="mt-6">
-                <h3 className="sr-only">Reviews</h3>
+                <h3 className="flex sr-only">Reviews</h3>
                 <div className="flex items-center">
                   <div className="flex items-center">
                     {[0, 1, 2, 3, 4].map((rating) => (
@@ -194,14 +191,14 @@ export default function ProductDetail() {
                       />
                     ))}
                   </div>
-                  <p className="sr-only">{product.rating} out of 5 stars</p>
+                  <p className="flex sr-only">{product.rating} out of 5 stars</p>
                 </div>
               </div>
 
               <form className="mt-10">
                 {/* Colors */}
                 <div>
-                  <h3 className="text-sm font-medium text-gray-900">Color</h3>
+                  <h3 className="flex text-sm font-medium text-gray-900">Color</h3>
 
                   <RadioGroup
                     value={selectedColor}
@@ -247,7 +244,7 @@ export default function ProductDetail() {
                     <h3 className="text-sm font-medium text-gray-900">Size</h3>
                     <a
                       href="#"
-                      className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
+                      className="text-sm font-medium text-red-600 hover:text-indigo-500"
                     >
                       Size guide
                     </a>
@@ -325,7 +322,7 @@ export default function ProductDetail() {
                 <button
                   onClick={handleCart}
                   type="submit"
-                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   Add to Cart
                 </button>
@@ -334,26 +331,26 @@ export default function ProductDetail() {
 
             <div className="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6">
               {/* Description and details */}
-              <div>
-                <h3 className="sr-only">Description</h3>
+              
+                
 
                 <div className="space-y-6">
-                  <p className="text-base text-gray-900">
+                  <p className="flex text-base text-gray-900">
                     {product.description}
                   </p>
                 </div>
-              </div>
+         
 
               <div className="mt-10">
-                <h3 className="text-sm font-medium text-gray-900">
+                <h3 className="flex text-sm font-medium text-gray-900">
                   Highlights
                 </h3>
 
                 <div className="mt-4">
                   <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
                     {highlights.map((highlight) => (
-                      <li key={highlight} className="text-gray-400">
-                        <span className="text-gray-600">{highlight}</span>
+                      <li key={highlight} className=" text-gray-400">
+                        <span className="flex text-gray-600">{highlight}</span>
                       </li>
                     ))}
                   </ul>
@@ -361,10 +358,10 @@ export default function ProductDetail() {
               </div>
 
               <div className="mt-10">
-                <h2 className="text-sm font-medium text-gray-900">Details</h2>
+                <h2 className="flex text-sm font-medium text-gray-900">Details</h2>
 
                 <div className="mt-4 space-y-6">
-                  <p className="text-sm text-gray-600">{product.description}</p>
+                  <p className="flex text-sm text-gray-600">{product.description}</p>
                 </div>
               </div>
             </div>
