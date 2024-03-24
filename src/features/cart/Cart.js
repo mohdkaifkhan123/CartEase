@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   deleteItemFromCartAsync,
+  selectCartLoaded,
   selectCartStatus,
   selectItems,
   updateCartAsync,
@@ -18,7 +19,7 @@ export default function Cart() {
   const items = useSelector(selectItems);
   const status = useSelector(selectCartStatus);
   const [openModal, setOpenModal] = useState(null);
-
+  const cartLoaded=useSelector(selectCartLoaded);
   const totalAmount = items.reduce(
     (amount, item) => discountedPrice(item.product) * item.quantity + amount,
     0
@@ -35,7 +36,7 @@ export default function Cart() {
 
   return (
     <>
-      {!items.length && <Navigate to="/" replace={true}></Navigate>}
+      {!items.length && cartLoaded && <Navigate to="/" replace={true}></Navigate>}
 
       <div>
         <div className="mx-auto mt-12 rounded-md border-2 bg-red-100 max-w-7xl px-4 sm:px-6 lg:px-8">

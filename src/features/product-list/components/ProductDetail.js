@@ -69,7 +69,7 @@ export default function ProductDetail() {
   }, [dispatch, params.id]);
 
   return (
-    <div className="bg-red-100 ">
+    <div className="bg-red-100 rounded-lg border-2 ">
       {status === 'loading' ? (
         <Grid
           height="80"
@@ -92,7 +92,7 @@ export default function ProductDetail() {
                     <div className="flex items-center">
                       <a
                         href={breadcrumb.href}
-                        className="mr-2 text-sm font-medium text-gray-900"
+                        className="flex mr-2 text-sm font-medium text-gray-900"
                       >
                         {breadcrumb.name}
                       </a>
@@ -113,7 +113,7 @@ export default function ProductDetail() {
                 <a
                   href={product.href}
                   aria-current="page"
-                  className="font-medium text-gray-500 hover:text-gray-600"
+                  className="flex font-medium text-gray-500 hover:text-gray-600"
                 >
                   {product.title}
                 </a>
