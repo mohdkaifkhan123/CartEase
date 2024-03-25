@@ -99,7 +99,7 @@ function NavBar({ children }) {
                             <span className="sr-only">Open user menu</span>
                             <img
                               className="h-8 w-8 rounded-full"
-                              src={userInfo.imageUrl}
+                              src="http://pluspng.com/img-png/user-png-icon-young-user-icon-2400.png"
                               alt=""
                             />
                           </Menu.Button>
